@@ -1,0 +1,153 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #352222;
+
+}
+
+
+
+
+
+
+header {
+    background-color: #352222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 200px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: -50px;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f96407;
+    color: #fff;
+}
+
+.contact-info {
+    margin-right: 200px;
+
+}
+
+.phone-number {
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.call-button {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s ease;
+
+}
+.call-button:hover {
+    background-color: #f96407;
+    color: #fff;
+}
+
+
+
+
+
+
+
+main {
+    /* Стили для основного содержимого страницы */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+
+
+section[id="portfolio"] {
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    font-weight:lighter;
+}
+
+p{
+    font-size: 20px;
+    font-family:   sans-serif ;
+    color: #fff;
+    font-weight:lighter;
+
+}
+
+h3{
+    font-family: sans-serif;
+    color: #fff;
+    font-weight:lighter;
+}
+
+/* Стили для портфолио */
+.project {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.project img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.project p {
+    margin-top: 5px;
+}
+
+/* Стили для новостей */
+#news {
+    /* Дополнительные стили для блока с новостями */
+}
+
+footer {
+    /* Стили для подвала сайта */
+}
