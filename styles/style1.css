@@ -1,23 +1,26 @@
 /* Общие стили */
 body {
     font-family: Arial, sans-serif;
+    display: block;
     margin: 0;
     padding: 0;
     background-color: #352222;
 
 }
 
-
-
-
-
-
 header {
-    background-color: #352222;
-    padding: 20px;
+    background-color:  #352222;
+    padding: 1%;
+    height: 10vh;
     display: flex;
-    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.logo {
+    width: 25%;
 }
 
 .logo img {
@@ -25,16 +28,19 @@ header {
     margin-left: 200px;
 }
 
+nav {
+    width: 25%;
+}
+
 nav ul {
     list-style: none;
-    margin-left: -50px;
+    justify-content: space-between;
     padding: 0;
     display: flex;
 }
 
 nav ul li {
-    margin-right: 10px;
-    
+
 }
 
 nav ul li a {
@@ -51,12 +57,15 @@ nav ul li a:hover {
 }
 
 .contact-info {
-    margin-right: 200px;
-
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-right: 200px; */
 }
 
 .phone-number {
-    padding-bottom: 10px;
     color: #fff;
 }
 
@@ -68,34 +77,27 @@ nav ul li a:hover {
     background-color: transparent;
     color: #fff;
     transition: background-color 0.3s ease;
-
 }
+
 .call-button:hover {
     background-color: #f96407;
     color: #fff;
 }
 
-
-
-
-
-
-
 main {
     /* Стили для основного содержимого страницы */
     display: flex;
     flex-direction: column;
+    padding-top: 10vh;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     text-align: center;
 }
 
 
 
 section[id="portfolio"] {
-    margin-top: 300px;
-    margin-bottom: 20px;
+    
 }
 
 
@@ -143,11 +145,51 @@ h3{
     margin-top: 5px;
 }
 
-/* Стили для новостей */
-#news {
-    /* Дополнительные стили для блока с новостями */
+footer {
+    background-color: white;
+    bottom: 0;
+    height: 20vh;
 }
 
-footer {
-    /* Стили для подвала сайта */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* прозрачный черный цвет */
 }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 20% auto; /* размещаем модальное окно по центру экрана */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 30%;
+    max-width: 600px; /* максимальная ширина модального окна */
+    position: relative;
+}
+
+#modal-toggle:checked + .modal {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+  
+  
